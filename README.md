@@ -40,9 +40,3 @@ Feel free to check the [issues page](https://github.com/rtonata88/medical-clinic
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
