@@ -55,3 +55,9 @@ CREATE TABLE IF NOT EXISTS medical_treatments(
     CONSTRAINT medical_history_id_fk FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id),
     CONSTRAINT treatment_id_fk FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
+
+
+CREATE INDEX medical_history_id_index ON invoices (medical_history_id asc);
+CREATE INDEX invoice_id_index ON invoice_items (invoice_id asc);
+CREATE INDEX medical_history_treatment_index ON medical_treatments (medical_history_id asc);
+CREATE INDEX treatment_id_index ON medical_treatments (treatment_id asc);
