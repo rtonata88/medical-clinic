@@ -6,7 +6,8 @@ CREATE DATABASE medical_clinic
 
 
 CREATE TABLE IF NOT EXISTS patients (
-	id serial PRIMARY KEY,
+	id bigint GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(255) NOT NULL,
-    date_of_birth date
+    date_of_birth date,
+    CONSTRAINT patient_id_primary_key PRIMARY KEY (id)
 );
